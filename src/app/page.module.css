@@ -1,0 +1,47 @@
+.banner {
+  height: 70px; 
+  width: 100%; 
+  background-color: #04274c;
+  border-radius: 20px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  animation: shake 2s ease-in-out infinite, slideIn 4s ease-in-out; 
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0); /* Start and end position */
+  }
+  25% {
+    transform: translateX(-5px); /* Move left */
+  }
+  75% {
+    transform: translateX(5px); /* Move right */
+  }
+}
+.popup {
+  background-color: #00192d;
+  border-radius: 10px;
+  transition: opacity 2.5s ease; /* Fade animation */
+  opacity: 1; /* Initial opacity */
+}
+
+.popup.animate {
+  opacity: 0; /* Final opacity */
+}
+
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-180%); /* Start position for slide animation */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End position for slide animation */
+  }
+}
