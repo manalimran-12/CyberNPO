@@ -65,6 +65,7 @@ const Main = () => {
                                 height: '50px',
                                 backgroundColor: '#04274c',
                                 color: 'white',
+                                marginLeft: "5%",
                                 fontFamily: 'aktiv-grotesk, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif',
                                 '&:hover': { backgroundColor: '#00192d', textDecoration: 'underline' },
                             }}
